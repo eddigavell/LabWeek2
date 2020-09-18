@@ -35,7 +35,7 @@ public class Main {
         File startingFolder = new File("txtfiler/");
 
         System.out.println("-------Program FileCrawler-------");
-        System.out.print("Vad vill du söka efter? ");
+        System.out.print("Vad vill du söka efter?: ");
         String sokOrd = sc.next();
         System.out.println("Du söker efter: " + sokOrd + " \ni mapp: " + startingFolder);
         System.out.println();
