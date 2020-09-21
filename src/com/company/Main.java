@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void stepThroughFileAndSearch(File startFolder, String searchWord){
+    public static void stepThroughFileAndSearch(File startFolder, String searchWord) {
         if (startFolder.isDirectory()){
             File[] folderContents = startFolder.listFiles();
             assert folderContents != null;
@@ -24,7 +24,7 @@ public class Main {
                 }
                 sc.close();
             } catch (Exception e) {
-                System.err.println("An error occured.");
+                System.err.println("Cant read " + startFolder.getName() + " in " + startFolder.getAbsolutePath());
             }
         }
     }
